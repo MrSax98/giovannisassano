@@ -23,7 +23,7 @@ export const profile: Profile = {
   links: {
     linkedin: "https://www.linkedin.com/in/giovanni-sassano-565369119/",
     substack: "https://diariodiunosmarrito.substack.com/",
-    github: null,
+    github: "https://github.com/MrSax98",
   },
   summary:
     "Mathematician by training, AI & data engineer at Deloitte Next Hub, MSc candidate in Statistical Sciences at Sapienza. Stochastic models, retrieval systems, and the space between them.",

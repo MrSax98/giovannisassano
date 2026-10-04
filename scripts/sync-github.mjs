@@ -1,12 +1,12 @@
 /**
- * Optional build step: pulls public, non-fork repositories for GITHUB_USERNAME
+ * Build step: pulls public, non-fork repositories for GITHUB_USERNAME (default MrSax98)
  * into src/content/github.json, which the Projects section renders.
  * Without the variable (or without network) it leaves the file untouched,
  * so the build never fails because of GitHub.
  */
 import { writeFile, readFile } from "node:fs/promises";
 
-const user = process.env.GITHUB_USERNAME?.trim();
+const user = (process.env.GITHUB_USERNAME ?? "MrSax98").trim();
 const out = new URL("../src/content/github.json", import.meta.url);
 
 if (!user) {
